@@ -1,0 +1,8 @@
+<!-- <router-outlet></router-outlet> -->
+<div>
+  <input type = "text" [(ngModel)] = "message" name = "message" placeholder="Enter Message">
+  <button type = "submit" value = "send" (click)="sendMessage(message)"></button>
+  <div *ngFor = "let msg of messageRecieved">
+    <span>{{msg.msg.message}}</span>
+  </div>
+</div>
